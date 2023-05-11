@@ -20,9 +20,9 @@ public class PaqueteSeguroComponent implements SeguroComponent {
 	public double costo() {
 		double costoPaquete = 0;
 		for (SeguroComponent itemSeguro : listaSeguro) {
-			costoPaquete += itemSeguro.costo();
+			costoPaquete += itemSeguro.costo() * (1 - 0.05); // aca aplicar descuento
 		}
-		return costoPaquete * (1 - (0.05 * listaSeguro.size()));
+		return costoPaquete;
 	}
 
 }

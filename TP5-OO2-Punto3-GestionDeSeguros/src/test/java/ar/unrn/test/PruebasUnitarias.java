@@ -23,7 +23,7 @@ class PruebasUnitarias {
 		paqueteConTodosLosSeguros.add(vidaSeguro);
 		paqueteConTodosLosSeguros.add(medicosSeguro);
 
-		assertEquals(440.0, paqueteConTodosLosSeguros.costo());
+		assertEquals(522.5, paqueteConTodosLosSeguros.costo());
 	}
 
 	@Test
@@ -41,7 +41,7 @@ class PruebasUnitarias {
 
 		paqueteHogarYSalud.add(paqueteSalud);
 
-		assertEquals(382.5, paqueteHogarYSalud.costo());
+		assertEquals(415.625, paqueteHogarYSalud.costo());
 	}
 
 }
